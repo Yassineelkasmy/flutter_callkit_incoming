@@ -25,40 +25,30 @@
         <com.hiennv.flutter_callkit_incoming.widgets.RippleRelativeLayout
             android:id="@+id/llBackgroundAnimation"
             android:layout_width="match_parent"
-            android:layout_height="261dp"
+            android:layout_height="482dp"
             android:layout_marginTop="@dimen/base_margin_revert_x5"
             android:layout_weight="1"
             android:fitsSystemWindows="false">
 
 
-            <ImageView
-                android:id="@+id/ivLogo"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/base_margin_x2_5"
-                android:layout_above="@id/ivAvatar"
-                android:layout_marginBottom="81dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_logo"
-                android:visibility="invisible"
-                tools:ignore="ContentDescription" />
-
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/ivAvatar"
-                android:layout_width="@dimen/size_avatar"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/size_avatar"
-                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/base_margin_x3"
+                android:layout_marginLeft="@dimen/size_avatar"
+                android:layout_marginTop="@dimen/size_avatar"
+                android:layout_marginRight="@dimen/size_avatar"
                 android:src="@drawable/ic_default_avatar"
                 app:civ_border_color="#80ffffff"
                 app:civ_border_width="1dp" />
 
-
             <LinearLayout
-                android:layout_width="324dp"
-                android:layout_height="142dp"
+                android:layout_width="375dp"
+                android:layout_height="305dp"
                 android:layout_below="@id/ivAvatar"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/base_margin_x2"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -84,8 +74,8 @@
 
                 <TextView
                     android:id="@+id/tvNumber"
-                    android:layout_width="300dp"
-                    android:layout_height="116dp"
+                    android:layout_width="350dp"
+                    android:layout_height="255dp"
                     android:layout_marginTop="4dp"
                     android:ellipsize="end"
                     android:maxLines="50"
